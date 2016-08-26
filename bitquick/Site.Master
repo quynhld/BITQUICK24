@@ -1,86 +1,256 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="bitquick.SiteMaster" %>
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
-
+    <title>VirginBTC.Com</title>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mosaddek" />
+    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <meta name="csrf-token" content="AvJsvFUkFTxZxtYHOn19V6YN6zqQExtwl6k0WVSd" />
+    <!-- Bootstrap core CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-reset.css" rel="stylesheet" />
+    <!--external css-->
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+    <link href="Content/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="Content/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="Content/Site.css" type="text/css" />
+    <link rel="stylesheet" href="Content/myjs.js" type="text/css" />
+    <!--right slidebar-->
+    <link href="Content/slidebars.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="Content/AdminStyle.css" rel="stylesheet" />
+    <link href="Content/style-responsive.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery.validate.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="https://bitsun.org/home/js/jquery.js">
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Start Alexa Certify Javascript -->
+    <script type="text/javascript">
+        _atrk_opts = { atrk_acct: "HIwpn1aMp410Y8", domain: "virginbtc.com", dynamic: true };
+        (function () { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(as, s); })();
+    </script>
+    <noscript>
+        <img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=HIwpn1aMp410Y8" style="display: none" height="1" width="1" alt="" />
+    </noscript>
+    <!-- End Alexa Certify Javascript -->
 </head>
 <body>
-    <form runat="server">
-        <asp:ScriptManager runat="server">
-            <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
-                <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
-                <asp:ScriptReference Name="respond" />
-                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
-            </Scripts>
-        </asp:ScriptManager>
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+    <!-- Navigation -->
+    <div id="menu-navigation">
+        <nav class="navbar navbar-inverse mitads" role="navigation" style="background-color: #E6E7E8 !important; border-bottom: 10px solid #F6921E;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header ">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!---Logo--->
+                <a class="navbar-brand" href="/">
+                    <img style="height: 62px; position: relative; top: 0px !important; width: 136px;" src="images/logo_BitQuick.png">
+                    <strong style="color:#F6921E;">24</strong>
+                </a>
+                <!---end of Logo--->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="mnvav" href="/">HOME</a>
+                    </li>
+                    <li>
+                        <a class="mnvav" href="#about"><strong>ABOUT</strong></a>
+                    </li>
+                    <li>
+                        <a class="mnvav" href="#vision"><strong>VISION</strong></a>
+                    </li>
+                    <li>
+                        <a class="mnvav" href="/Admin/login.aspx">LOGIN</a>
+                    </li>
+                    <li>
+                        <div id="google_translate_element"></div>
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({ pageLanguage: 'vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true }, 'google_translate_element');
+                            }
+                        </script>
+                        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </div>
+    <!-- end header -->
+    <!-- Full Page Image Background Carousel Header -->
+    <header class="carousel slide" id="myCarousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li class="" data-slide-to="0" data-target="#myCarousel"></li>
+            <li data-slide-to="1" data-target="#myCarousel" class=""></li>
+            <li data-slide-to="2" data-target="#myCarousel" class="active"></li>
+        </ol>
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item next left">
+                <!-- Set the third background image using inline CSS below. -->
+                <div style="background-image: url('images/slide-2.jpg');" class="fill">
+                    <img src="images/slide-2.jpg" />
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
+                <div class="carousel-caption">
+                </div>
+                <div class="grid"></div>
+            </div>
+            <div class="item">
+                <!-- Set the first background image using inline CSS below. -->
+                <div style="background-image: url('images/slide-3.jpg');" class="fill">
+                    <img src="images/slide-3.jpg" />
+                </div>
+                <div class="carousel-caption">
+                </div>
+                <div class="grid"></div>
+            </div>
+            <div class="item active left">
+                <!-- Set the second background image using inline CSS below. -->
+                <div style="background-image: url('images/slide-1.jpg');" class="fill">
+                    <img src="images/slide-1.jpg" />
+                </div>
+                <div class="carousel-caption">
+                </div>
+                <div class="grid"></div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <a data-slide="prev" href="#myCarousel" class="left carousel-control">
+            <span class="icon-prev"></span>
+        </a>
+        <a data-slide="next" href="#myCarousel" class="right carousel-control">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- Page ABOUT US -->
+    <div id="about" style="margin: 10px 0;">
+        <div class="container">
+            <!-- ABOUT US -->
+            <div class="col-lg-12">
+                <div style="padding-left: 40px;" class="mid col-lg-4">
+                    <img style="border: 5px solid #404041;" src="images/Bitcoint_Pic.jpg" />
+                </div>
+                <div class="col-lg-8 txtpadding">
+                    <h2 class="aboutus title_lg">ABOUT <span>US</span></h2>
+                    <p>VirginBTC is a community of people who provide financial helping on the principle of reciprocity of mercy. We use infrastructure of Bitcoin in our transactions. In VirginBTC, people don’t have to make any contracts of property. In VirginBTC, where is no lender and no debtors. Everything is very simple: one participant asks for help &ndash; another one helps. The only thing that VirginBTC demands from its participants is to be honest and kind to each other. People ask for financial helping when they need it, and then people also need to give financial helping to the others when they are able to do it. With VirginBTC everyone has an equal chance to make money and build their wealth and dream and it is unique in the way that it is a community project based on honesty and trust of the members.</p>
+                    <p>VirginBTC uses Bitcoin as a currency for trading. It is the best possible way for participants from different countries. As Bitcoin cause a revolution in financial relationship between people and people, this combination of VirginBTC and Bitcoin ideas, which is fair and free financial system, make possible for us to create significant changes in modern world.</p>
                 </div>
             </div>
         </div>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
+    </div>
+    <!-- end ABOUT US -->
+
+    <!-- Register Now -->
+    <div id="register">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+                <h2 class="light" style="margin: 0; padding: 0;">Like What You See?
+                    <br>
+                    We’re Just Getting Started</h2>
+                <br>
+                <a class="regis" href="Admin/Login.aspx">LOGIN</a>
+            </div>
         </div>
-    </form>
+    </div>
+    <!-- end Register Now -->
+
+    <!-- VISION -->
+    <div id="vision">
+        <div class="container">
+            <div style="margin-bottom: 65px;" class="col-lg-12">
+                <div class="col-lg-6">
+                    <h2 class="vision title_lg">VISION</h2>
+                    <p style="text-align: justify;">Through Bitsun, we want to develop a community where Bitsun uses the trending of 2016 that makes people around the world get closer. They are exalting. According to experts, this trend will last about 5 to 10 years. It is a wave of Providing Help and Getting Help. Like the period of the gold, era of real estate, era of technology, if people know how grasp these opportunities, they may be a millionaire.</p>
+                    <p style="text-align: justify;">However, it is just the past. Nowadays, the developing combined community with technology is a big trend. If people can grasp it now, they can change their life. We want people to join with us going on a boat of new trends and then we are the pioneer leader. Besides, Bitsun increases income for people in a short time, moreover, it develops the community. When this trend explode, your life are in a new progress.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://bitsun.org/home/images/vision.jpg">
+                </div>
+            </div>
+           <%-- <div class="mid col-lg-4 txtpadding">
+                <div class="txt_head">PACKET-1BTC</div>
+                <div class="txt_content">
+                    <p class="percent">2%</p>
+                    <p class="txt_mid">DAILY</p>
+                    <p class="txt_bottom">FOR 15 JOINING DAYS</p>
+                </div>
+            </div>
+            <div class="mid col-lg-4 txtpadding">
+                <div class="txt_head">BONUS SYSTEM</div>
+                <div class="txt_content">
+                    <p class="percent">10%</p>
+                    <p class="txt_mid">REFERAL</p>
+                    <p class="txt_bottom">COMMISSION SYSTEM 1% TO 12%</p>
+                </div>
+            </div>
+            <div class="mid col-lg-4 txtpadding">
+                <div class="txt_head">CONTERPART</div>
+                <div class="txt_content">
+                    <p class="percent">1%</p>
+                    <p class="txt_mid">TOTAL</p>
+                    <p class="txt_bottom">DIRECT MEMBER THE SAME LEVEL</p>
+                </div>
+            </div>--%>
+
+        </div>
+    </div>
+    <!-- end VISION -->
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="col-lg-5">
+                <span style="color: #F6921E;">support@virginbtc.com</span>
+            </div>
+            <!--/span_5-->
+            <div class="col-lg-7">
+                <div id="social">
+                    <span><a target="_blank" href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></span>
+                    <span><a target="_blank" href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></span>
+                </div>
+            </div>
+            <!--/span_7-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--/row-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://bitsun.org/home/js/myjs.js"></script>
+    <script src="https://bitsun.org/home/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://bitsun.org/home/js/bootstrap.min.js"></script>
+    <!-- Script to Activate the Carousel -->
+    <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+    </script>
+    <div class="container body-content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
 </body>
 </html>
