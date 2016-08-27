@@ -213,6 +213,7 @@
     <Content Include="fonts\slide-3.jpg" />
     <Content Include="fonts\vision.jpg" />
     <Content Include="images\0.png" />
+    <Content Include="images\Athena_Bitcoin_OWL.png" />
     <Content Include="images\backgroup_site.jpg" />
     <Content Include="images\Billgate.jpg" />
     <Content Include="images\Bitcoint_Pic.jpg" />
@@ -245,6 +246,7 @@
     <Content Include="images\menu_divider.gif" />
     <Content Include="images\o-BITCOIN-facebook.jpg" />
     <Content Include="images\PD.png" />
+    <Content Include="images\pic_aboutus.jpg" />
     <Content Include="images\pic_youtube.png" />
     <Content Include="images\pin.png" />
     <Content Include="images\r.png" />
@@ -273,6 +275,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\OpenSans-Regular-webfont.woff" />
     <Content Include="fonts\OpenSansBold-webfont.woff" />
+    <None Include="Properties\PublishProfiles\BitQuick.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Admin\common-scripts.js" />
     <Content Include="Scripts\Admin\easy-pie-chart.js" />
