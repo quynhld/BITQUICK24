@@ -155,8 +155,7 @@ input[type="submit"] {
     float: right;
 }
 .navbar-brand{
-     padding: 0 10px !important;
-     
+     /*padding: 0 10px !important;*/
 }
 .navbar-brand img{
     height: 62px;
@@ -179,7 +178,7 @@ input[type="submit"] {
     border-bottom: 20px solid #F6921E !important;
     color: #fff !important;
     margin-bottom: 0;
-    padding: 14px 60px !important;
+    padding: 14px 10px !important;
 }
 
 .mnvav {
@@ -202,10 +201,16 @@ input[type="submit"] {
     padding: 10px;
 }
 .span3 {
-    width: 222px;
+    width: 250px;
 }
 [class*="span"] {
     float: left;
     margin-left: 30px;
     min-height: 1px;
 }
+.textwidget h3{
+    color:#f7941d;
+    text-align: center;
+}
+
+

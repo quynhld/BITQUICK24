@@ -5,7 +5,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VirginBTC.Com</title>
+    <title>BitQuick24.org</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -94,6 +94,7 @@
         </nav>
     </div>
     <!-- end header -->
+
     <!-- Full Page Image Background Carousel Header -->
     <header class="carousel slide" id="myCarousel">
         <!-- Indicators -->
@@ -159,7 +160,6 @@
     </div>
     <!-- end ABOUT US -->
 
-
     <!-- VISION -->
     <div id="vision">
         <div class="container">
@@ -173,30 +173,6 @@
                     <img src="images/vision.jpg">
                 </div>
             </div>
-            <%-- <div class="mid col-lg-4 txtpadding">
-                <div class="txt_head">PACKET-1BTC</div>
-                <div class="txt_content">
-                    <p class="percent">2%</p>
-                    <p class="txt_mid">DAILY</p>
-                    <p class="txt_bottom">FOR 15 JOINING DAYS</p>
-                </div>
-            </div>
-            <div class="mid col-lg-4 txtpadding">
-                <div class="txt_head">BONUS SYSTEM</div>
-                <div class="txt_content">
-                    <p class="percent">10%</p>
-                    <p class="txt_mid">REFERAL</p>
-                    <p class="txt_bottom">COMMISSION SYSTEM 1% TO 12%</p>
-                </div>
-            </div>
-            <div class="mid col-lg-4 txtpadding">
-                <div class="txt_head">CONTERPART</div>
-                <div class="txt_content">
-                    <p class="percent">1%</p>
-                    <p class="txt_mid">TOTAL</p>
-                    <p class="txt_bottom">DIRECT MEMBER THE SAME LEVEL</p>
-                </div>
-            </div>--%>
         </div>
     </div>
     <!-- end VISION -->
@@ -208,20 +184,17 @@
                     <div class="span3">
                         <ul>
                             <li class="widget widget_text" id="text-2">
-                                <h2 class="widgettitle">Contact Us</h2>
                                 <div class="textwidget">
-                                    <h3><font color="#f7941d">Contact Us</font></h3>
-
+                                    <h3>Contact Us</h3>
                                     <p>
                                         Athena Bitcoin, Inc.<br>
                                         Chicago, Saint Louis, Dallas<br>
                                         <a href="http://www.athenabitcoin.com">AthenaBitcoin.com</a><br>
                                     </p>
-
                                     <p>
                                         Email: <a href="mailto:orders@bitquick.co">orders@bitquick.co</a><br>
                                     </p>
-                                    <h3><font color="#f7941d">Business Hours</font></h3>
+                                    <h3>Business Hours</h3>
                                     <p>
                                         Monday - Friday: 8 AM - 10 PM EST<br>
                                         Saturday - Sunday: 9 AM - 8 PM EST
@@ -233,50 +206,19 @@
                 </div>
                 <div class="footer-widget">
                     <div class="span3">
-                        <h2 id="team">The Team</h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td colspan="2">
-                                        <a href="http://www.athenabitcoin.com" target="_blank">
-                                            <img width="" src="images/Athena_Bitcoin_OWL.png"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <b>
-                                            <br>
-                                            Athena Bitcoin, Inc.<br>
-                                        </b>
-                                        <br>
-                                        The most trusted name in Bitcoin ATM&trade;<br>
+                        <ul>
+                            <li class="widget widget_text" id="text-2">
+                                <div class="textwidget">
+                                    <h3>The Team</h3>
+                                    <a href="http://www.athenabitcoin.com" target="_blank">
+                                        <img width="" src="images/Athena_Bitcoin_OWL.png"></a>
+                                    <p>Athena Bitcoin, Inc.</p>
+                                    <p>
+                                        The most trusted name in Bitcoin ATM
                                         <a class="fa fa-twitter" href="http://twitter.com/AthenaBitcoin" target="_blank"></a>
                                         <a class="fa fa-facebook" href="https://facebook.com/AthenaBitcoin" target="_blank"></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="footer-widget">
-                    <div class="span3">
-                        <ul>
-                            <li class="widget widget_recent_entries" id="recent-posts-2">
-                                <h2 class="widgettitle">THE LATEST FROM BITQUICK</h2>
-                                <ul>
-                                    <li>
-                                        <a href="/blog/bitquick-launches-new-affiliate-program.php">BitQuick Launches New Affiliate Program</a>
-                                    </li>
-                                    <li>
-                                        <a href="/blog/bitpay-crowdcurity-bitgo-and-clef-speak-on-bitcoin-security-at-bitpanel.php">BitPay, CrowdCurity, BitGo, and Clef speak on Bitcoin Security at BitPanel</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="/blog/save-20-at-starbucks-when-you-turn-your-cash-into-bitcoin-with-bitquick-and-fold.php">Save 20% at Starbucks when you turn your cash into Bitcoin with BitQuick and Fold</a>
-                                    </li>
-
-
-                                </ul>
+                                    </p>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -284,20 +226,46 @@
                 <div class="footer-widget">
                     <div class="span3">
                         <ul>
-                            <li class="widget widget_text" id="text-5">
-                                <h2 class="widgettitle">TERMS OF SERVICE</h2>
+                            <li class="widget widget_text" id="recent-posts-2">
                                 <div class="textwidget">
-                                    View our <a href="/terms-of-service.php">Terms of Service/Privacy Policy</a> agreement.
+                                    <h3>THE LATEST FROM BITQUICK</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="/blog/bitquick-launches-new-affiliate-program.php">BitQuick Launches New Affiliate Program</a>
+                                        </li>
+                                        <li>
+                                            <a href="/blog/bitpay-crowdcurity-bitgo-and-clef-speak-on-bitcoin-security-at-bitpanel.php">BitPay, CrowdCurity, BitGo, and Clef speak on Bitcoin Security at BitPanel</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/blog/save-20-at-starbucks-when-you-turn-your-cash-into-bitcoin-with-bitquick-and-fold.php">Save 20% at Starbucks when you turn your cash into Bitcoin with BitQuick and Fold</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-widget">
+                    <div class="span3">
+                        <ul>
+                            <li class="widget widget_text" id="text-5">
+                                <div class="textwidget">
+                                    <h3 class="widgettitle">TERMS OF SERVICE</h3>
+                                    <div class="textwidget">
+                                        View our <a href="/terms-of-service.php">Terms of Service/Privacy Policy</a> agreement.
                                     <br>
-                                    <br>
-                                    <a href="https://bitcointalk.org/index.php?topic=262082.0">BitcoinTalk Forums</a>
-                                    <br>
-                                    <h2 class="widgettitle">Recommended Wallets:</h2>
-                                    <a href="https://play.google.com/store/apps/details?id=com.athenabitcoin.wallet&amp;hl=en&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-                                        <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play"></a>
-                                    <br>
-                                    <a href="https://itunes.apple.com/us/app/athena-bitcoin/id1087704508?ls=1&amp;mt=8">
-                                        <img src="/assets/img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on iTunes"></a>
+                                        <br>
+                                        <a href="https://bitcointalk.org/index.php?topic=262082.0">BitcoinTalk Forums</a>
+                                        <br>
+                                        <h2 class="widgettitle">Recommended Wallets:</h2>
+                                        <a href="https://play.google.com/store/apps/details?id=com.athenabitcoin.wallet&amp;hl=en&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                                            <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play"></a>
+                                        <br>
+                                        <a href="https://itunes.apple.com/us/app/athena-bitcoin/id1087704508?ls=1&amp;mt=8">
+                                            <img src="/assets/img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on iTunes"></a>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -306,7 +274,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- footer -->
     <div id="footer">
@@ -325,12 +292,13 @@
         </div>
         <!--/container-->
     </div>
-    <!--/row-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!--end of footer -->
+
+    <%-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="https://bitsun.org/home/js/myjs.js"></script>
     <script src="https://bitsun.org/home/js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="https://bitsun.org/home/js/bootstrap.min.js"></script>
+    <script src="https://bitsun.org/home/js/bootstrap.min.js"></script>--%>
     <!-- Script to Activate the Carousel -->
     <script>
         $('.carousel').carousel({
