@@ -106,7 +106,7 @@ input[type="password"] {
 
 #triangle {
     width: 0;
-    border-top: 12x solid transparent;
+    border-top: 12px solid transparent;
     border-right: 12px solid transparent;
     border-bottom: 12px solid #3399cc;
     border-left: 12px solid transparent;
@@ -179,6 +179,7 @@ input[type="submit"] {
     color: #fff !important;
     margin-bottom: 0;
     padding: 14px 10px !important;
+    background-color: #E6E7E8 !important;
 }
 
 .mnvav {
@@ -208,9 +209,16 @@ input[type="submit"] {
     margin-left: 30px;
     min-height: 1px;
 }
-.textwidget h3{
+.textwidget h3,.widgettitle{
     color:#f7941d;
     text-align: center;
 }
+.textwidget p{
+    color:#ffffff;
+}
+.textwidget a:hover, .textwidget ul li a:hover{
+    color:#ffffff !important;
+}
+
 
 
