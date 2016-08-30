@@ -35,7 +35,7 @@ input[type="password"] {
 
 .regis {
     background-color: #F6921E;
-    color:#ffffff !important;
+    color: #ffffff !important;
     font-family: Lovelo,sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -44,8 +44,9 @@ input[type="password"] {
     text-transform: uppercase;
     width: 333px;
 }
+
     .regis:hover {
-        color:#ffffff !important;
+        color: #ffffff !important;
         background-color: #C78A2E;
     }
 
@@ -154,24 +155,20 @@ input[type="submit"] {
 #social {
     float: right;
 }
-.navbar-brand{
-     /*padding: 0 10px !important;*/
+
+.navbar-brand {
+    padding: 0 4px !important;
 }
-.navbar-brand img{
-    height: 62px;
-    position: relative;
-    top: 0 !important;
-    width: 200px;
-}
+
+    .navbar-brand img {
+        float: left;
+        position: relative;
+        top: 0 !important;
+        width: 210px;
+    }
 
 .mid {
     text-align: center;
-}
-
-.mitads {
-    height: 110px !important;
-    /*padding: 0 !important;
-    height: 0 !important;*/
 }
 
 .navbar-inverse {
@@ -187,38 +184,61 @@ input[type="submit"] {
     color: #F6921E !important;
     font-weight: bolder;
 }
+
 #vision {
     border-top: 10px solid #F6921E;
     background: #000000 none repeat scroll 0 0 !important;
     color: #fff;
 }
-.light{
+
+.light {
     color: #ffffff;
-    font-weight:bold;
+    font-weight: bold;
 }
+
 .txt_head {
     background: #F6921E none repeat scroll 0 0;
     font-size: 22px;
     padding: 10px;
 }
+
 .span3 {
     width: 250px;
 }
+
 [class*="span"] {
     float: left;
     margin-left: 30px;
     min-height: 1px;
 }
-.textwidget h3,.widgettitle{
-    color:#f7941d;
+
+.textwidget h3, .widgettitle {
+    color: #f7941d;
     text-align: center;
 }
-.textwidget p{
-    color:#ffffff;
+
+.textwidget p {
+    color: #ffffff;
 }
-.textwidget a:hover, .textwidget ul li a:hover{
-    color:#ffffff !important;
+
+.textwidget a:hover, .textwidget ul li a:hover {
+    color: #ffffff !important;
 }
+
+.goog-te-gadget-simple {
+    background-color: #E6E7E8 !important;
+}
+
+.goog-te-gadget {
+    width: 50px;
+    padding: 0 10px;
+}
+/*.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}*/
 
 
 
