@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 //using BIT.Objects;
 //using BIT.Controller;
 
-namespace BIT.WebUI.Admin
+namespace bitquick.Admin
 {
     public partial class Dashboard : System.Web.UI.Page
     {
