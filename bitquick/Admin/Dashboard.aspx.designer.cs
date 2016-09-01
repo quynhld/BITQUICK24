@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BIT.WebUI.Admin {
+namespace bitquick.Admin {
     
     
     public partial class Dashboard {
